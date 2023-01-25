@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clockContainer{
+    position: relative;
+    /* Its position is set to relative so that with respect to the clock, the positions of clock hands can be set, at the same time ensuring the responsiveness of webpage */
+
+    width: 80vh;
+    height: 80vh;
+    background: url('clock.png') no-repeat;
+
+    /* This property fits the background image as per container size */
+    background-size: 100%;
+}
+
+#hour, #min, #sec{
+    background-color: black;
+    position: absolute;
+    border-top-left-radius: 1rem;
+
+    /* This sets the axis of rotation as bottom-most point */
+    /* By default it's the centre */
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 0.5vw;
+    height: 20vh;
+    top: 25%;
+    left: 49.3%;
+}
+#min{
+    width: 0.4vw;
+    height: 25vh;
+    top: 19%;
+    left: 49.3%;   
+}
+#sec{
+    width: 0.33vw;
+    height: 30vh;
+    top: 12.6%;
+    left: 49.5%;  
+}
